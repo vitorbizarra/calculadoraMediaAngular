@@ -1,0 +1,28 @@
+<form class="d-flex flex-column gap-4" #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+
+    <h1 class="ms-auto me-auto">Calculadora de Média</h1>
+
+    <div class="input-group">
+        <span class="input-group-text">AC1</span>
+        <input type="number" name="ac1" ngModel class="form-control">
+    </div>
+
+    <div class="input-group">
+        <span class="input-group-text">AC2</span>
+        <input type="number" name="ac2" ngModel class="form-control">
+    </div>
+
+    <div class="input-group">
+        <span class="input-group-text">AG</span>
+        <input type="number" name="ag" ngModel class="form-control">
+    </div>
+
+    <div class="input-group">
+        <span class="input-group-text">AF</span>
+        <input type="number" name="af" ngModel class="form-control">
+    </div>
+
+    <button type="submit" class="btn btn-success">Calcular média</button>
+
+    <h1>Média: {{ result }}</h1>
+</form>
